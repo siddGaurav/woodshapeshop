@@ -1,0 +1,123 @@
+.contactPage {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: var(--page-top-pad) var(--container-pad) 4rem;
+  overflow-x: hidden;
+}
+
+.contactPage__inner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.contactPage__title {
+  margin: 0 0 12px;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.contactPage__lead {
+  margin: 0 0 32px;
+  text-align: center;
+  color: #555;
+  font-size: clamp(0.95rem, 3vw, 1.05rem);
+  line-height: 1.6;
+}
+
+.contactPage__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 4vw, 32px);
+  align-items: start;
+}
+
+.contactCard,
+.contactForm {
+  background: #f7f4ef;
+  border-radius: 12px;
+  padding: clamp(20px, 4vw, 28px);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.contactCard__heading {
+  margin: 0 0 16px;
+  font-size: clamp(1.1rem, 3vw, 1.25rem);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactCard p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.contactCard a {
+  color: #1a4d2e;
+}
+
+.contactCard__note {
+  margin-top: 16px !important;
+  font-size: 0.9rem !important;
+  color: #666 !important;
+}
+
+.contactForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactForm__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contactForm__field input,
+.contactForm__field textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.contactForm__field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contactForm__actions button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contactPage__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contactForm__actions button {
+    width: auto;
+    min-width: 160px;
+  }
+}

@@ -1,0 +1,119 @@
+/* Shared layout for shop-style pages (grids, headings) */
+.HomeSec5Main {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding: var(--page-top-pad) 0 4rem;
+  position: relative;
+  top: 0;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-white) 100%);
+}
+
+.HomeSection5Mid {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding-left: var(--container-pad);
+  padding-right: var(--container-pad);
+  box-sizing: border-box;
+}
+
+.HeadingCart {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+
+.FirstHeadingCart {
+  width: 100%;
+  padding: clamp(24px, 4vw, 40px) 0 clamp(8px, 2vw, 16px);
+  text-align: center;
+}
+
+.FirstHeadingCart h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: var(--color-ink);
+  letter-spacing: -0.02em;
+}
+
+.FirstHeadingCart::before {
+  content: "Collection";
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 10px;
+}
+
+.CartMid {
+  width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  display: grid;
+  gap: clamp(16px, 3vw, 24px);
+  box-sizing: border-box;
+  padding: 10px 0 20px;
+  overflow: hidden;
+}
+
+.CartDiv {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.CartDiv > section {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.CartDiv > section > .CartMain,
+.CartDiv .CartMain {
+  height: 100%;
+}
+
+@media (min-width: 1025px) {
+  .HomeSection5Mid {
+    max-width: var(--content-max, 1280px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .CartMid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .FirstHeadingCart h1 {
+    font-size: 2.35rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .CartMid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .CartMid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    padding: 8px 0;
+  }
+}

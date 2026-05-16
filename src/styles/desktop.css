@@ -1,0 +1,167 @@
+/**
+ * Desktop / laptop (1025px+) — premium scale & composition
+ */
+@media (min-width: 1025px) {
+  :root {
+    --content-max: 1280px;
+    --container-pad: 24px;
+    --page-top-pad: 32px;
+  }
+
+  .HeaderMid,
+  .navbarMid,
+  .HomeSec2Mid,
+  .Homesec4Mid,
+  .cardSliderMid,
+  .HomeSection5Mid,
+  .FooterMid,
+  .containDetailsMid,
+  .Aboutmid,
+  .contactPage__inner {
+    max-width: var(--content-max);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  /* Hero — tall & cinematic */
+  .hero-premium .HomeSectionMid {
+    min-height: 520px;
+    max-height: 72vh;
+    padding: 64px var(--container-pad);
+  }
+
+  .hero-premium__content h1 {
+    font-size: 4.25rem;
+  }
+
+  .ArtIndia {
+    font-size: 2.5rem;
+  }
+
+  .hero-premium__tagline {
+    font-size: 1.15rem;
+  }
+
+  /* Intro */
+  .intro-band {
+    padding: 64px var(--container-pad);
+  }
+
+  .intro-band .HomeSec2Mid h1 {
+    font-size: 2.75rem;
+  }
+
+  /* Video */
+  .VdSection1 {
+    min-height: 420px;
+    max-height: 580px;
+  }
+
+  .animation,
+  .animationChoise {
+    font-size: 4rem;
+  }
+
+  /* Feature splits — large imagery */
+  .feature-showcase {
+    padding: 56px 0;
+  }
+
+  .feature-showcase .Pices {
+    gap: 56px;
+  }
+
+  .feature-showcase .Pices1 {
+    min-height: 420px;
+    max-height: 520px;
+    aspect-ratio: auto;
+  }
+
+  .feature-showcase .titlePhoto h1 {
+    font-size: 2.35rem;
+  }
+
+  .feature-showcase .titlePhoto p {
+    font-size: 1.05rem;
+  }
+
+  /* Product grid — slightly larger cards */
+  .shop-collection {
+    padding: 72px 0;
+  }
+
+  .shop-collection .FirstHeadingCart h1 {
+    font-size: 2.35rem;
+  }
+
+  .CartMid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .CartMain__media {
+    aspect-ratio: 1 / 1;
+  }
+
+  /* Slider */
+  .spotlight-slider {
+    padding: 72px 0;
+  }
+
+  .slider-track .card img {
+    height: 200px;
+  }
+
+  .slider-track .card {
+    border-radius: var(--radius-md);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .slider-track .card h4 {
+    color: #faf8f5;
+  }
+
+  .card__price {
+    color: #d4a84b;
+  }
+
+  .arrow {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .arrow:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  /* Header polish */
+  .HeaderMain {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(26, 24, 20, 0.06);
+  }
+
+  .Headlogo .logoWood {
+    font-family: var(--font-display);
+    font-size: 2.15rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .navbarMain {
+    border-bottom: 1px solid var(--color-sand);
+  }
+
+  .navbarMid {
+    background: transparent;
+  }
+
+  .NavunderList li a {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
