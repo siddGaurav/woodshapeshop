@@ -5,7 +5,7 @@ import './Homesection.css'
 import CardData from './datajason/data.json'
 function Homesection() {
 
-    
+
     return (
         <>
             <section>
@@ -37,7 +37,10 @@ function Homesection() {
             <section>
                 <div className="HomeSec3Main cinema-banner">
                     <video autoPlay playsInline muted loop className="VdSection1">
-                        <source src="./src/assets/vdFUr.mp4" type="video/mp4" />
+                        <source
+                            src="https://www.pexels.com/download/video/5895463/"
+                            type="video/mp4"
+                        />
                     </video>
                     <h1 className='animation'>Your</h1>
                     <h1 className='animationChoise'>Choice</h1>
@@ -59,7 +62,7 @@ function Homesection() {
                                     <p>Beautiful Grains - Perfect for every day use - Easy to handle - Single piece wood with One year warranty*</p>
 
                                     <button type="button" className="btn-premium">
-                                        Starting from ₹499
+                                        Starting from ₹10000
                                     </button>
 
                                 </div>
@@ -373,20 +376,20 @@ function Homesection() {
                                     />
                                 </div>
                             ))}
-                      </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
 
 
-         <section>
-            <div className="cardsSlider spotlight-slider">
-                <div className='cardSliderMid'>
-                      <CardSlider/>
+            <section>
+                <div className="cardsSlider spotlight-slider">
+                    <div className='cardSliderMid'>
+                        <CardSlider />
+                    </div>
                 </div>
-            </div>
-         </section>
+            </section>
 
         </>
     )

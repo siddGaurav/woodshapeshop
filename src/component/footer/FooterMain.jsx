@@ -9,6 +9,7 @@ function FooterMain(){
                     <p>Join our email list for exclusive offers and the latest news.</p>
                     
                     <input type="text" placeholder="Email"></input>
+                    <button type="button">Subscribe</button>
                 </div>
             </div>
         </div>
