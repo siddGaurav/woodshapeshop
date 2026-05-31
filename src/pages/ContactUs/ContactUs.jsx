@@ -20,7 +20,7 @@ function ContactUs() {
                 Reach us
               </h2>
               <p>
-                <strong>Phone:</strong> +91 9105860614, 7895181307
+                <strong>Phone:</strong> +91 9528777792
               </p>
               <p>
                 <strong>Email:</strong>{" "}

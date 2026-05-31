@@ -52,7 +52,7 @@ function FooterMain(){
 <div className='Details'>
     <h1>Contact Us -</h1>
    <p>Have a question or need assistance? We're here for you! Whether it's about our products, your order, or just to say hello, we'd love to hear from you. Drop us a message, and we'll get back to you as soon as possible!</p>
-   <p>Phone: +91 9105860614, 7895181307</p>
+   <p>Phone: +91 9105860614</p>
    <p>Email: woodshape@wood.com</p>
 </div>
 

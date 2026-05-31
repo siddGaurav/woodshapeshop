@@ -10,7 +10,7 @@ function Index(){
         <Header/>
         <Homesection/>
         <FooterMain/>
-        <Signup/>
+        {/* <Signup/> */}
        
         </>
     )
